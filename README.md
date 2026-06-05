@@ -13,6 +13,18 @@ git clone https://github.com/wswwfhrace-ops/race-demo-manager.git
 
 This folder can be anywhere, so place it in a convenient location.
 
+# Important
+Some of the demos saved will not be up to standard.
+In some cases:
+- The beginning of a run may be missing.
+- A demo might fail to play.
+
+This issue originates from the games themselves and is not caused by Race Demo Manager.
+
+One can mitigate the issue by waiting between starting clicking the restart bind and starting an attempt, to give the game time to stop and create the next demo. Although this might not be practical. 
+
+It is still recommended to save the server demo of runs you would like to keep.
+
 # Running
 On first launch
 - Enter player name
