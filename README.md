@@ -1,13 +1,17 @@
 # race-demo-manager
-Automatic PB demo tracker for Warfork and Warsow. Supports wf and wsw on both linux and windows.
+Automatic PB demo tracker for Warfork and Warsow.
+
+This script mpnitors live race demos, detects personal bests, archives PB demos automatically, and maintains records across both games.
+
+Both Windows and Linux are supported.
 
 # Requirements
-Python
+Python 3.9+
 
 # Installation
-git clone https://github.com/yourname/demo-manager.git
+git clone https://github.com/wswwfhrace-ops/race-demo-manager.git
 
-This folder can be anywhere, so place it in a convinient location.
+This folder can be anywhere, so place it in a convenient location.
 
 # Running
 On first launch
@@ -15,7 +19,7 @@ On first launch
 - Choose the correct demo folders (Users with fs_usehomedir 0 will need to enter their path manually)
 - Select your restart and noclip toggle binds (use the same binds you have already been using)
 
-The script will create a demomanager.cfg and append a exec demomanager.cfg to the bottom of your autoexec.cfg.
+The script will create a demomanager.cfg and appends a [exec demomanager.cfg] to the end of your autoexec.cfg.
 It will also automatically create the below file structure in the wf and wsw demo folders.
 
 demo manager/
@@ -25,6 +29,8 @@ demo manager/
 ├── unprocessed demos/
 
 └── invalid demos/
+
+Existing settings and binds are not removed.
 
 If you have demos from when you used mikul's tool or if you have demos that only contain 1 run. You can copy them into demo manager/unprocessed demos/ in either wf/wsw depending on the demo and the script will parse them and save the times and demos. This can be done at anytime, you just need to restart the program.
 
@@ -53,7 +59,7 @@ Run completed (new map or new pb)
 - Previous PB: time_of_previous_pb
 - Improvement: -15.435s
 - *** NEW PB! ***
-- Saved as: testmap [99.77.33] WF by Player 05-06-2026.wfdz22
+- Saved as: testmap [99.77.333] WF by Player 05-06-2026.wfdz22
 
 
 Run completed but not pb
@@ -71,7 +77,16 @@ If a pb is found, the demo is renamed and saved and the records are updated.
 
 Demos will be renamed in this format mapname [time] game_name by player_name date
 
-eg: testmap [99.77.33] WSW by Player 05-06-2026.wdz20
+eg: testmap [99.77.333] WSW by Player 05-06-2026.wdz20
 
 # Records
-records will be stored in the race-demo-manager folder as records_wf.json, records_wsw.json, records_all.json
+# Records
+
+The following files are created in the race-demo-manager folder:
+
+- records_wf.json
+- records_wsw.json
+- records_all.json
+- config.json
+
+records_all.json stores the best known time for each map regardless of game.
