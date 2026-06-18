@@ -92,7 +92,6 @@ Demos will be renamed in this format mapname [time] game_name by player_name dat
 eg: testmap [99.77.333] WSW by Player 05-06-2026.wdz20
 
 # Records
-# Records
 
 The following files are created in the race-demo-manager folder:
 
