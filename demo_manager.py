@@ -27,7 +27,7 @@ CONFIG_FILE         = BASE_DIR / "config.json"
 WARFORK_RECORDS     = BASE_DIR / "records_wf.json"
 WARSOW_RECORDS      = BASE_DIR / "records_wsw.json"
 RECORDS_ALL = BASE_DIR / "records_all.json"
-DEMO_MANAGER_DIR    = "demo manager"
+DEMO_MANAGER_DIR    = "demo_manager"
 POLL_INTERVAL       = 1.0   # seconds between watcher polls
 
 
