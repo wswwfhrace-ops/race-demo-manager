@@ -102,5 +102,7 @@ The following files are created in the race-demo-manager folder:
 
 records_all.json stores the best known time for each map regardless of game.
 
-
-Thanks to mikul, aelwi , stall and algolineu for their help.
+# Credits
+Coded with the help of ChatGpt
+Thanks to mikul for his idea
+Thanks to algolineu , aelwi and Stall for testing it
