@@ -247,7 +247,7 @@ def _create_game_folders(config):
 
 # The "End:" line contains the definitive finish time.
 # Format inside the binary file:  ^8End: ^700:26.092 ...
-_END_PATTERN = re.compile(r"\^8End:\s*\^\d(\d{2}:\d{2}\.\d{3})")
+_END_PATTERN = re.compile(r"\^8End:\s*\^\d(\d{2}:\d{2}\.\d{3})\s*\^8/\s*Personal:")
 
 # mapname is stored as:  mapname\x00<name>\x00gametype
 _MAPNAME_PATTERN = re.compile(r"mapname\x00([^\x00]+)\x00gametype")
