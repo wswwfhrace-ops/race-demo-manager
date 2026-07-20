@@ -31,7 +31,7 @@ On first launch
 - Choose the correct demo folders (Users with fs_usehomedir 0 will need to enter their path manually)
 - Select your restart and noclip toggle binds (use the same binds you have already been using)
 
-The script will create a demomanager.cfg and appends a [exec demomanager.cfg] to the end of your autoexec.cfg.
+The script will create a demomanager.cfg and appends a [exec demo_manager.cfg] to the end of your autoexec.cfg.
 It will also automatically create the below file structure in the wf and wsw demo folders.
 
 demo manager/
